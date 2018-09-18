@@ -1,0 +1,16 @@
+<div class="main posts-index post-background">
+  <div class="post-top">
+    <h1>サークル情報一覧</h1>
+  </div>
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item"><!-- 管理者名をサークル名に変更する -->
+        <p>サークル名：<span class="post-letter-color"><%= post.manager %></span></p>
+        <p>種類：<span class="post-letter-color"><%= post.sports_kinds %></span></p>
+        <p>日時：<span class="post-letter-color"><%= post.dates %></span></p>
+        <p>場所：<span class="post-letter-color"><%= post.area %></span></p>
+        <p>内容：<span class="post-letter-color"><%= post.explain %></span></p>
+      </div>
+    <% end %>
+  </div>
+</div>

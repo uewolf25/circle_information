@@ -1,0 +1,28 @@
+<div class="main posts-new post-background">
+  <div class="container">
+    <h1 class="form-heading">サークル情報を載せる</h1>
+    <%= form_tag("/post/create") do %>
+      <div class="form">
+        <div class="form-body">
+         <!-- 管理者名 -->
+          <p>サークル名<span class="require">*</span></p>
+          <input type="text" name="manager">
+         <!-- 運動の種類 -->
+          <p>運動の種類<span class="require">*</span></p>
+          <input type="text" name="sports_kinds">
+         <!-- 日付 -->
+          <p>日付<span class="require">*</span></p>
+          <input type="date" name="dates">
+         <!-- 場所 -->
+          <p>場所<span class="require">*</span></p>
+          <input type="text" name="area">
+         <!-- 説明 -->
+          <p>説明<span class="require">*</span></p>
+          <textarea name="explain"></textarea>
+          <span class="require">*は必須項目です。</span>
+          <input type="submit" value="登録">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

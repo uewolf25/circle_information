@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  manager: MyString
+  sports_kinds: MyString
+  dates: MyString
+  area: MyString
+  explain: MyText
+
+two:
+  manager: MyString
+  sports_kinds: MyString
+  dates: MyString
+  area: MyString
+  explain: MyText

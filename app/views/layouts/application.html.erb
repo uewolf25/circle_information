@@ -9,6 +9,33 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to("CircleInformationApp", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("CircleInformationAppとは", "/about") %>
+        </li>
+        <li>
+          <%= link_to("サークル一覧", "/post/index") %>
+        </li>
+        <li>
+          <%= link_to("新規投稿", "/post/new") %>
+        </li>
+        <li>
+          <%= link_to("新規登録", "/signup") %>
+        </li>
+        <li>
+          <%= link_to("ログイン", "/login") %>
+        </li>
+      </ul>
+
+    </header>
+
+
+
+
     <%= yield %>
   </body>
 </html>
